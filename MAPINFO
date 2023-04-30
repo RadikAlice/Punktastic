@@ -1,0 +1,73 @@
+GAMEINFO
+{
+TitlePatch = "graphics/M_DOOM"
+TitleMusic = "music/FreeMidi/WeWanttheAirwaves"
+IntermissionMusic = "music/MidiMelody/Sum_41_-_Grab_The_Devil_By_The_Horn_And_Fuck_Him_Up_The_Ass"
+TitleTime = 25
+DefaultDropStyle = 2
+}
+ClearSkills
+
+defaultmap
+{
+NoFreelook
+Skybox = "F_SKY1"
+}
+
+map map01 "Big Crash"
+{
+Music = "music/OpenGameArt/rigged.wav"
+}
+
+skill baby
+{
+   Name = "Kill the DJ"
+   AutoUseHealth
+   AmmoFactor = 2
+   DamageFactor = 0.5
+   EasyBossBrain
+   SpawnFilter = Baby
+   PicName = "M_SKILL1"
+   Key = "k"
+}
+skill easy
+{
+   Name = "Bored To Death"
+   AutoUseHealth
+   DamageFactor = 0.8
+   EasyBossBrain
+   SpawnFilter = Easy
+   PicName = "M_SKILL2"
+   Key = "b"
+}
+skill normal
+{
+   Name = "Conspiracy of One"
+   DefaultSkill
+   SpawnFilter = Normal
+   PicName = "M_SKILL3"
+   Key = "c"
+}
+skill hard
+{
+   Name = "Evil Empire"
+   SpawnFilter = Hard
+   DamageFactor = 1.3
+   RespawnTime = 8
+   RespawnLimit = 5
+   Aggressiveness = 0.8
+   PicName = "M_SKILL4"
+   Key = "e"
+}
+skill nightmare
+{
+   Name = "Refused Are Fucking Dead"
+   SpawnFilter = Nightmare
+   DamageFactor = 1.5
+   RespawnTime = 5
+   RespawnLimit = 3
+   Aggressiveness = 1.0
+   PicName = "M_SKILL5"
+   Key = "r"
+   MustConfirm = "Sure about that? This is like, not even balanced man"
+}
